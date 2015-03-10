@@ -6,7 +6,7 @@ namespace DefiningClassesPartI
 {
     public class GSM
     {
-        private static string iPhone4S; //problem 6
+        private static GSM iPhone4S; //problem 6
         private string manifacturer; //problem 1
         private string model; //problem 1
         private double price; //problem 1
@@ -15,7 +15,7 @@ namespace DefiningClassesPartI
         private Display display; //problem 1
         private List<Call> callHistory; //problem 9
 
-        public static string IPhone4S //problem 6
+        public static GSM IPhone4S //problem 6
         {
             get { return iPhone4S; }
             private set { iPhone4S = value; }
@@ -23,7 +23,7 @@ namespace DefiningClassesPartI
 
         static GSM() //problem 6
         {
-            IPhone4S = "Info about the IPhone4S:\nHalf the functionality, double the price";
+            IPhone4S = new GSM("IPhone", "4S", 1999.99, "New Owner", new Battery("Bad", 5, 50, BatteryTypes.LiIon), new Display(), new List<Call>());
         }
 
         //problem 5

@@ -57,7 +57,7 @@ namespace DefiningClassesPartI
         public override string ToString()
         {
             return String.Format("Diagonal length: {0}, Number of colors: {1}",
-                this.Diagonal, this.NumberOfColors);
+                this.diagonal, this.numberOfColors);
         }
     }
 }

@@ -34,7 +34,7 @@ namespace DefiningClassesPartI
         public override string ToString()
         {
             return string.Format("Date and time: {0:G}; Duration: {1} seconds;\nDialed number: {2}",
-                this.Date, this.Duration, this.DialedPhone);
+                this.date, this.duration, this.dialedPhone);
         }
     }
 }

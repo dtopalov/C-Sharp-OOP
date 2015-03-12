@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 
 namespace DefiningClassesPartI
 {
@@ -149,19 +148,19 @@ namespace DefiningClassesPartI
         public List<Call> AddCalls(Call call)
         {
             this.CallHistory.Add(call);
-            return this.CallHistory;
+            return new List<Call>(this.callHistory);
         }
 
         public List<Call> DeleteCalls(Call call)
         {
             this.CallHistory.Remove(call);
-            return this.CallHistory;
+            return new List<Call>(this.callHistory);
         }
 
         public List<Call> ClearCallHistory()
         {
             this.CallHistory.Clear();
-            return this.CallHistory;
+            return new List<Call>(this.callHistory);
         }
 
         //problem 11
@@ -181,7 +180,7 @@ namespace DefiningClassesPartI
 
         public string PrintCallHistory()
         {
-            return string.Format("Calls history:\n{0}", string.Join(Environment.NewLine, this.callHistory));
+            return string.Format("Calls history:\n{0}", string.Join(Environment.NewLine, new List<Call>(this.callHistory)));
         }
     }
 }

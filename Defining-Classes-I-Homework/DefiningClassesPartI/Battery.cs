@@ -82,7 +82,7 @@ namespace DefiningClassesPartI
         public override string ToString()
         {
             return String.Format("Model: {0}, Hours idle: {1}, Hours talk: {2}, Type: {3}",
-                this.Model, this.HoursIdle, this.hoursTalk, this.Type);
+                this.model, this.hoursIdle, this.hoursTalk, this.type);
         }
     }
 }

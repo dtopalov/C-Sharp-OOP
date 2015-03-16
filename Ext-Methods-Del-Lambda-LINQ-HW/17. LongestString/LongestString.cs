@@ -1,13 +1,14 @@
-﻿namespace _17.LongestString
+﻿using System;
+
+namespace _17.LongestString
 {
-    using System;
     using System.Linq;
 
     class LongestString
     {
         static void Main()
         {
-            string[] someStrings = new[]
+            string[] someStrings = 
             {
                 "qwerty",
                 "asfd",

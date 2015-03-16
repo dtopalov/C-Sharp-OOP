@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Numerics;
-
-namespace _20.InfiniteSeries
+﻿namespace _20.InfiniteSeries
 {
     using System;
+    using System.Numerics;
 
     class InfiniteConvergentSeries
     {

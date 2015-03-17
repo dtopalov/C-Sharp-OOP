@@ -17,10 +17,19 @@ namespace _17.LongestString
                 "bla"
             };
 
-            Console.WriteLine(GetLongestString(someStrings));
+            var sorted =
+                from strings in someStrings
+                orderby strings.Length descending
+                select strings;
+
+            string longest = sorted.FirstOrDefault();
+
+            Console.WriteLine(longest);
+
+            //Console.WriteLine(GetLongestString(someStrings)); // another solution
         }
 
-        public static string GetLongestString(string[] input)
+        public static string GetLongestString(string[] input) // another solution
         {
             var longest =
                 from strings in input

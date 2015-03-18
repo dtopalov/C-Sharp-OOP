@@ -154,7 +154,6 @@ namespace Defining_Classes_Part_II_Pr_8_10
 
         public static bool operator true(Matrix<T> matrix)
         {
-            bool nonZeroElements = true;
 
             for (int i = 0; i < matrix.Rows; i++)
             {
@@ -162,30 +161,28 @@ namespace Defining_Classes_Part_II_Pr_8_10
                 {
                     if (matrix[i, j] == (dynamic)0)
                     {
-                        nonZeroElements = false;
+                        return false;
                     }
                 }
             }
 
-            return nonZeroElements;
+            return true;
         }
 
         public static bool operator false(Matrix<T> matrix)
         {
-            bool nonZeroElements = true;
-
             for (int i = 0; i < matrix.Rows; i++)
             {
                 for (int j = 0; j < matrix.Cols; j++)
                 {
                     if (matrix[i, j] == (dynamic)0)
                     {
-                        nonZeroElements = false;
+                        return false;
                     }
                 }
             }
 
-            return nonZeroElements;
+            return true;
         }
     }
 }

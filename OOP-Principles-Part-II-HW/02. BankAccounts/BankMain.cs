@@ -33,9 +33,9 @@
 
             depositAccTest.Deposit(200);
             Console.WriteLine(depositAccTest.Balance);
-
-            depositAccTest.Withdraw(200);
-            Console.WriteLine(depositAccTest.Balance);
+            var depositAcc = depositAccTest as DepositAccount;
+            depositAcc.Withdraw(300);
+            Console.WriteLine(depositAcc.Balance);
         }
     }
 }

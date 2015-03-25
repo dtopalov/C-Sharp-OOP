@@ -18,7 +18,7 @@
             this.Balance += amount;
         }
 
-        public override void Withdraw(decimal amount)
+        public void Withdraw(decimal amount)
         {
             if (amount > this.Balance)
             {

@@ -55,9 +55,5 @@ namespace _02.BankAccounts
         }
 
         public abstract void Deposit(decimal amount);
-
-        public virtual void Withdraw(decimal amount)
-        {
-        }
     }
 }
